@@ -1,6 +1,9 @@
+"use client";
+import { useAppStore } from "@/store/store";
 import React from "react";
 
 function Header() {
+  const { signin } = useAppStore((State) => State);
   return (
     <div>
       <header className="bg-gray-50">
@@ -64,7 +67,13 @@ function Header() {
               aria-hidden="true"
               className="block h-6 w-px rounded-full bg-gray-200"
             />
-            <a href="#" className="block shrink-0">
+            <a
+              href="#"
+              className="block shrink-0"
+              onClick={() => {
+                signin();
+              }}
+            >
               <span className="sr-only">Profile</span>
               <img
                 alt="Man"

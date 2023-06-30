@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function CliSideNav() {
   return (
@@ -11,20 +12,20 @@ function CliSideNav() {
             </strong>
             <ul className="mt-2 space-y-1">
               <li>
-                <a
-                  href
+                <Link
+                  href="/cli"
                   className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
                 >
                   Overiew
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href
+                <Link
+                  href="cli/requirements"
                   className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                 >
                   Requirements
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
@@ -34,36 +35,36 @@ function CliSideNav() {
             </strong>
             <ul className="mt-2 space-y-1">
               <li>
-                <a
-                  href
+                <Link
+                  href="cli/create-app"
                   className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                 >
                   Create App
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href
+                <Link
+                  href="cli/generate"
                   className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                 >
                   Generate
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href
+                <Link
+                  href="cli/add"
                   className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                 >
                   Add
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href
+                <Link
+                  href="cli/clone"
                   className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                 >
                   Clone
-                </a>
+                </Link>
               </li>
             </ul>
           </li>

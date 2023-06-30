@@ -16,9 +16,8 @@ type componentType = {
 };
 
 function ComponentGrid() {
-  const { fetchPublicComponents, publicComponents } = useAppStore(
-    (State) => State
-  );
+  const { fetchPublicComponents, publicComponents, toggleSideBar } =
+    useAppStore((State) => State);
   useEffect(() => {
     fetchPublicComponents();
   }, []);
@@ -31,6 +30,9 @@ function ComponentGrid() {
             <div
               className="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
               key={index}
+              onClick={() => {
+                toggleSideBar(true);
+              }}
             >
               <a href="#_" className="block">
                 <img

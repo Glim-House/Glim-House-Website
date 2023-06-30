@@ -27,7 +27,7 @@ function Products() {
               </div>
             </a>
           </li>
-          <li className="flex-1 cursor-pointer">
+          <li className="flex-1 cursor-not-allowed opacity-25">
             <a className="relative block p-4" href>
               <div className="flex items-center justify-center gap-4">
                 <svg
@@ -50,7 +50,7 @@ function Products() {
               </div>
             </a>
           </li>
-          <li className="flex-1 cursor-pointer">
+          <li className="flex-1 cursor-not-allowed opacity-25">
             <a className="relative block p-4" href>
               <div className="flex items-center justify-center gap-4">
                 <svg
